@@ -1,0 +1,21 @@
+# Optional: run `brew install xcodegen && xcodegen` on a Mac to generate SyllabusTracker.xcodeproj
+name: SyllabusTracker
+options:
+  bundleIdPrefix: com.xavier
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  SyllabusTracker:
+    type: application
+    platform: iOS
+    sources: [SyllabusTracker]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.xavier.syllabustracker
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_NSFaceIDUsageDescription: "Face ID is used to unlock your syllabus tracker."
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
